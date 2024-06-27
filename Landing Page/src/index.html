@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Web</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline text-red-400 font-kunal">
-        Hello world!
-      </h1>
+    <nav class="p-3 flex bg-white justify-between items-center ">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-12 max-h-12" src="../assets/asset 0.png" alt="Logo">
+            <span class="text-lg font-display">ToDesktop</span>
+        </a>
+    <div id="nav-menu" class="hidden md:flex gap-12">
+            <a href="#" class="font-medium hover:text-primary">Pricing</a>
+            <a href="#" class="font-medium hover:text-primary">Docs</a>
+            <a href="#" class="font-medium hover:text-primary">Changelog</a>
+            <a href="#" class="font-medium hover:text-primary">Blogs</a>
+            <a href="#" class="font-medium hover:text-primary">Login</a>
+    </div>
+    <div class="hidden md:flex flex-1 justify-end">
+        <button class="md:flex hidden gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
+            <img src="../assets/asset 1.svg" alt=""><span class="font-display font-medium">Electron Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+    </button>
+    <div id='nav-dialog' class="fixed bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between "></div>
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-12 max-h-12" src="../assets/asset 0.png" alt="Logo">
+            <span class="text-lg font-display">ToDesktop</span>
+        </a>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-xmark text-gray-600"></i>
+</button>
+    </div>
+    </nav>
+<script src="../script.js"></script>
 </body>
 </html>

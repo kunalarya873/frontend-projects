@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1F2937",
+        primary: "#3238f2",
       },
       fontFamily: {
-        'kunal': ['Inter', 'sans-serif']
+        'display': ['Poppins', 'sans-serif'],
+        'body':['Inter', 'sans-serif']
       }
     },
   },
